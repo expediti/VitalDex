@@ -1,0 +1,311 @@
+{
+    "tool": "dizziness-symptom-checker",
+    "title": "Dizziness Symptom Checker",
+    "description": "Assess dizziness, vertigo, and balance-related symptoms to identify potential causes",
+    "version": "1.0",
+    "maxScore": 25,
+    "autoAdvance": true,
+    "questions": [
+        {
+            "id": 1,
+            "question": "How would you best describe your dizziness?",
+            "type": "single-choice",
+            "category": "dizziness-type",
+            "options": [
+                {
+                    "text": "Spinning sensation (vertigo) - room feels like it's moving",
+                    "value": "spinning-vertigo",
+                    "weight": 4,
+                    "icon": "🌀"
+                },
+                {
+                    "text": "Lightheaded or faint feeling",
+                    "value": "lightheaded",
+                    "weight": 2,
+                    "icon": "💭"
+                },
+                {
+                    "text": "Unsteady or off-balance feeling",
+                    "value": "unsteady",
+                    "weight": 3,
+                    "icon": "🚶"
+                },
+                {
+                    "text": "Floating or disconnected feeling",
+                    "value": "floating",
+                    "weight": 2,
+                    "icon": "☁️"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "When do you experience dizziness most?",
+            "type": "single-choice",
+            "category": "triggers",
+            "options": [
+                {
+                    "text": "When changing positions (standing up, rolling over)",
+                    "value": "position-change",
+                    "weight": 3,
+                    "icon": "🔄"
+                },
+                {
+                    "text": "With head movements or looking up/down",
+                    "value": "head-movement",
+                    "weight": 4,
+                    "icon": "↕️"
+                },
+                {
+                    "text": "Constantly, regardless of position",
+                    "value": "constant",
+                    "weight": 2,
+                    "icon": "⏰"
+                },
+                {
+                    "text": "Randomly, no clear pattern",
+                    "value": "random",
+                    "weight": 1,
+                    "icon": "🎲"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "How long do your dizzy episodes typically last?",
+            "type": "single-choice",
+            "category": "duration",
+            "options": [
+                {
+                    "text": "Seconds to 1 minute",
+                    "value": "seconds",
+                    "weight": 3,
+                    "icon": "⚡"
+                },
+                {
+                    "text": "Several minutes to hours",
+                    "value": "minutes",
+                    "weight": 4,
+                    "icon": "⏱️"
+                },
+                {
+                    "text": "Hours to days",
+                    "value": "hours-days",
+                    "weight": 2,
+                    "icon": "📅"
+                },
+                {
+                    "text": "Nearly continuous",
+                    "value": "continuous",
+                    "weight": 1,
+                    "icon": "♾️"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Do you have hearing problems or ear symptoms?",
+            "type": "single-choice",
+            "category": "ear-symptoms",
+            "options": [
+                {
+                    "text": "Hearing loss and/or ringing in ears",
+                    "value": "hearing-ringing",
+                    "weight": 4,
+                    "icon": "👂"
+                },
+                {
+                    "text": "Ear fullness or pressure",
+                    "value": "ear-fullness",
+                    "weight": 3,
+                    "icon": "🔇"
+                },
+                {
+                    "text": "Ear pain or discharge",
+                    "value": "ear-pain",
+                    "weight": 2,
+                    "icon": "😣"
+                },
+                {
+                    "text": "No ear symptoms",
+                    "value": "no-ear-symptoms",
+                    "weight": 0,
+                    "icon": "👂"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Do you experience nausea or vomiting with the dizziness?",
+            "type": "single-choice",
+            "category": "associated-symptoms",
+            "options": [
+                {
+                    "text": "Severe nausea or vomiting",
+                    "value": "severe-nausea",
+                    "weight": 3,
+                    "icon": "🤢"
+                },
+                {
+                    "text": "Mild nausea",
+                    "value": "mild-nausea",
+                    "weight": 2,
+                    "icon": "😵"
+                },
+                {
+                    "text": "No nausea",
+                    "value": "no-nausea",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Do you have headaches with your dizziness?",
+            "type": "single-choice",
+            "category": "headache",
+            "options": [
+                {
+                    "text": "Severe headaches or migraines",
+                    "value": "severe-headache",
+                    "weight": 3,
+                    "icon": "🤕"
+                },
+                {
+                    "text": "Mild headaches",
+                    "value": "mild-headache",
+                    "weight": 2,
+                    "icon": "😑"
+                },
+                {
+                    "text": "No headaches",
+                    "value": "no-headache",
+                    "weight": 0,
+                    "icon": "😌"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Are you taking any medications?",
+            "type": "single-choice",
+            "category": "medications",
+            "options": [
+                {
+                    "text": "Blood pressure or heart medications",
+                    "value": "blood-pressure-meds",
+                    "weight": 2,
+                    "icon": "💊"
+                },
+                {
+                    "text": "Antibiotics or ear medications recently",
+                    "value": "ear-medications",
+                    "weight": 3,
+                    "icon": "🧴"
+                },
+                {
+                    "text": "Other medications",
+                    "value": "other-meds",
+                    "weight": 1,
+                    "icon": "💉"
+                },
+                {
+                    "text": "No medications",
+                    "value": "no-medications",
+                    "weight": 0,
+                    "icon": "🚫"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Do you have any additional symptoms?",
+            "type": "single-choice",
+            "category": "neurological",
+            "options": [
+                {
+                    "text": "Weakness, numbness, vision changes, or speech problems",
+                    "value": "neurological-symptoms",
+                    "weight": 4,
+                    "icon": "🧠"
+                },
+                {
+                    "text": "Anxiety, rapid heartbeat, or sweating",
+                    "value": "anxiety-symptoms",
+                    "weight": 2,
+                    "icon": "😰"
+                },
+                {
+                    "text": "Just fatigue or tiredness",
+                    "value": "fatigue-only",
+                    "weight": 1,
+                    "icon": "😴"
+                },
+                {
+                    "text": "No other symptoms",
+                    "value": "no-other-symptoms",
+                    "weight": 0,
+                    "icon": "✅"
+                }
+            ]
+        }
+    ],
+    "scoring": {
+        "low": {
+            "min": 0,
+            "max": 8,
+            "level": "Low Concern Dizziness",
+            "color": "#4CAF50",
+            "description": "Your dizziness symptoms suggest a lower concern condition."
+        },
+        "moderate": {
+            "min": 9,
+            "max": 16,
+            "level": "Moderate Concern",
+            "color": "#FF9800",
+            "description": "Your symptoms suggest moderate concern that may benefit from evaluation."
+        },
+        "high": {
+            "min": 17,
+            "max": 25,
+            "level": "High Concern",
+            "color": "#F44336",
+            "description": "Your symptoms suggest a condition that warrants medical evaluation."
+        }
+    },
+    "recommendations": {
+        "low": [
+            "Your dizziness may be due to common, less serious causes",
+            "Stay hydrated and avoid sudden position changes",
+            "Consider if medications or stress might be contributing",
+            "Try simple balance exercises if appropriate",
+            "Monitor symptoms and note any patterns or triggers",
+            "Contact healthcare provider if symptoms persist or worsen"
+        ],
+        "moderate": [
+            "Your symptoms suggest you may benefit from medical evaluation",
+            "Keep a diary of when dizziness occurs and potential triggers",
+            "Avoid driving or operating machinery during dizzy episodes",
+            "Stay hydrated and move slowly when changing positions",
+            "Consider vestibular rehabilitation exercises",
+            "Schedule an appointment with your healthcare provider",
+            "Seek prompt care if symptoms worsen or new symptoms develop"
+        ],
+        "high": [
+            "Your symptoms warrant prompt medical evaluation",
+            "Avoid activities that could be dangerous if you become dizzy",
+            "Keep a detailed record of symptoms to share with your doctor",
+            "Consider seeing an ENT specialist or neurologist",
+            "Seek immediate care if you develop neurological symptoms",
+            "Don't delay in seeking professional medical assessment",
+            "Call emergency services if you have severe, sudden onset symptoms"
+        ]
+    },
+    "metadata": {
+        "basedOn": "Vestibular disorder clinical guidelines and ENT literature",
+        "lastUpdated": "2025-07-31",
+        "targetConditions": ["BPPV", "Meniere's disease", "Vestibular neuritis", "Migraine-associated dizziness"],
+        "disclaimer": "Dizziness can have many causes. Sudden onset with neurological symptoms requires immediate evaluation."
+    }
+}

@@ -1,0 +1,297 @@
+{
+    "tool": "food-poisoning-symptom-checker",
+    "title": "Food Poisoning Symptom Checker",
+    "description": "Assess digestive symptoms to determine likelihood of food poisoning",
+    "version": "1.0",
+    "maxScore": 25,
+    "autoAdvance": true,
+    "questions": [
+        {
+            "id": 1,
+            "question": "When did your digestive symptoms begin?",
+            "type": "single-choice",
+            "category": "timeline",
+            "options": [
+                {
+                    "text": "1-6 hours after eating",
+                    "value": "1-6-hours",
+                    "weight": 4,
+                    "icon": "⚡"
+                },
+                {
+                    "text": "6-24 hours after eating",
+                    "value": "6-24-hours",
+                    "weight": 3,
+                    "icon": "🕐"
+                },
+                {
+                    "text": "1-3 days after eating",
+                    "value": "1-3-days",
+                    "weight": 2,
+                    "icon": "📅"
+                },
+                {
+                    "text": "More than 3 days ago",
+                    "value": "over-3-days",
+                    "weight": 0,
+                    "icon": "📆"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Are you experiencing nausea or vomiting?",
+            "type": "single-choice",
+            "category": "digestive-symptoms",
+            "options": [
+                {
+                    "text": "Severe vomiting (unable to keep fluids down)",
+                    "value": "severe-vomiting",
+                    "weight": 4,
+                    "icon": "🤮"
+                },
+                {
+                    "text": "Moderate vomiting (several episodes)",
+                    "value": "moderate-vomiting",
+                    "weight": 3,
+                    "icon": "🤢"
+                },
+                {
+                    "text": "Nausea with little or no vomiting",
+                    "value": "mild-nausea",
+                    "weight": 2,
+                    "icon": "😵"
+                },
+                {
+                    "text": "No nausea or vomiting",
+                    "value": "no-nausea",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Do you have diarrhea?",
+            "type": "single-choice",
+            "category": "digestive-symptoms",
+            "options": [
+                {
+                    "text": "Severe watery diarrhea (6+ times/day)",
+                    "value": "severe-diarrhea",
+                    "weight": 4,
+                    "icon": "🚨"
+                },
+                {
+                    "text": "Moderate diarrhea (3-5 times/day)",
+                    "value": "moderate-diarrhea",
+                    "weight": 3,
+                    "icon": "💩"
+                },
+                {
+                    "text": "Loose stools (1-2 times/day)",
+                    "value": "loose-stools",
+                    "weight": 2,
+                    "icon": "🤔"
+                },
+                {
+                    "text": "No diarrhea",
+                    "value": "no-diarrhea",
+                    "weight": 0,
+                    "icon": "✅"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Do you have abdominal pain or cramping?",
+            "type": "single-choice",
+            "category": "pain-symptoms",
+            "options": [
+                {
+                    "text": "Severe abdominal pain",
+                    "value": "severe-pain",
+                    "weight": 3,
+                    "icon": "😰"
+                },
+                {
+                    "text": "Moderate cramping",
+                    "value": "moderate-pain",
+                    "weight": 2,
+                    "icon": "😣"
+                },
+                {
+                    "text": "Mild discomfort",
+                    "value": "mild-pain",
+                    "weight": 1,
+                    "icon": "😐"
+                },
+                {
+                    "text": "No abdominal pain",
+                    "value": "no-pain",
+                    "weight": 0,
+                    "icon": "😌"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Do you have a fever or feel feverish?",
+            "type": "single-choice",
+            "category": "systemic-symptoms",
+            "options": [
+                {
+                    "text": "High fever (over 101°F/38.3°C)",
+                    "value": "high-fever",
+                    "weight": 3,
+                    "icon": "🌡️"
+                },
+                {
+                    "text": "Low-grade fever or feeling feverish",
+                    "value": "low-fever",
+                    "weight": 2,
+                    "icon": "🤒"
+                },
+                {
+                    "text": "No fever",
+                    "value": "no-fever",
+                    "weight": 0,
+                    "icon": "❄️"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What type of food did you eat before symptoms started?",
+            "type": "single-choice",
+            "category": "food-source",
+            "options": [
+                {
+                    "text": "Raw/undercooked meat, seafood, or eggs",
+                    "value": "high-risk-food",
+                    "weight": 4,
+                    "icon": "🥩"
+                },
+                {
+                    "text": "Dairy products or mayonnaise-based foods",
+                    "value": "dairy-mayo",
+                    "weight": 3,
+                    "icon": "🥛"
+                },
+                {
+                    "text": "Restaurant, buffet, or takeout food",
+                    "value": "restaurant-buffet",
+                    "weight": 3,
+                    "icon": "🍽️"
+                },
+                {
+                    "text": "Home-cooked food",
+                    "value": "home-cooked",
+                    "weight": 1,
+                    "icon": "🏠"
+                },
+                {
+                    "text": "Not sure / multiple foods",
+                    "value": "unsure",
+                    "weight": 2,
+                    "icon": "🤷"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Did others who ate the same food also become ill?",
+            "type": "single-choice",
+            "category": "outbreak-indicator",
+            "options": [
+                {
+                    "text": "Yes, multiple people got sick",
+                    "value": "others-sick",
+                    "weight": 4,
+                    "icon": "👥"
+                },
+                {
+                    "text": "Yes, one other person got sick",
+                    "value": "one-other-sick",
+                    "weight": 3,
+                    "icon": "👫"
+                },
+                {
+                    "text": "No, others who ate the same food are fine",
+                    "value": "others-fine",
+                    "weight": 1,
+                    "icon": "😊"
+                },
+                {
+                    "text": "I ate alone / don't know",
+                    "value": "ate-alone",
+                    "weight": 0,
+                    "icon": "🍽️"
+                }
+            ]
+        }
+    ],
+    "scoring": {
+        "low": {
+            "min": 0,
+            "max": 8,
+            "level": "Unlikely Food Poisoning",
+            "color": "#4CAF50",
+            "description": "Your symptoms are less likely to be food poisoning."
+        },
+        "moderate": {
+            "min": 9,
+            "max": 16,
+            "level": "Possible Food Poisoning",
+            "color": "#FF9800",
+            "description": "Your symptoms suggest possible food poisoning."
+        },
+        "high": {
+            "min": 17,
+            "max": 25,
+            "level": "Likely Food Poisoning",
+            "color": "#F44336",
+            "description": "Your symptoms strongly suggest food poisoning."
+        }
+    },
+    "recommendations": {
+        "low": [
+            "Your symptoms may not be food poisoning",
+            "Stay hydrated with clear fluids",
+            "Consider other causes like viral gastroenteritis or stress",
+            "Monitor symptoms and seek care if they worsen",
+            "Rest and eat bland foods (BRAT diet) when able",
+            "Contact healthcare provider if symptoms persist beyond 48 hours"
+        ],
+        "moderate": [
+            "You may have food poisoning - focus on staying hydrated",
+            "Drink clear fluids: water, broth, or oral rehydration solutions",
+            "Avoid solid foods until vomiting stops for 6+ hours",
+            "Rest and avoid dairy, caffeine, alcohol, and fatty foods",
+            "Contact healthcare provider if symptoms worsen or persist beyond 3 days",
+            "Consider reporting to local health department if from restaurant"
+        ],
+        "high": [
+            "Strong indication of food poisoning - prioritize hydration",
+            "Seek medical attention if you show signs of severe dehydration",
+            "Report illness to local health department, especially if from restaurant",
+            "Stay hydrated with frequent small sips of clear fluids",
+            "Call healthcare provider immediately if you develop bloody stools or high fever",
+            "Isolate yourself to prevent spreading illness to others"
+        ]
+    },
+    "warningSymptoms": [
+        "Signs of severe dehydration (dizziness, dry mouth, little/no urination)",
+        "Blood in vomit or stool",
+        "High fever (over 102°F/39°C)",
+        "Severe abdominal pain",
+        "Persistent vomiting preventing fluid intake",
+        "Signs of neurological symptoms (blurred vision, muscle weakness)"
+    ],
+    "metadata": {
+        "basedOn": "CDC and FDA food safety guidelines",
+        "lastUpdated": "2025-01-31",
+        "targetConditions": ["Bacterial food poisoning", "Viral gastroenteritis", "Foodborne illness"],
+        "disclaimer": "This tool cannot replace professional medical evaluation for foodborne illness."
+    }
+}

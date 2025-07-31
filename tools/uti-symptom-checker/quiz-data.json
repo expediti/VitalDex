@@ -1,0 +1,266 @@
+{
+    "tool": "uti-symptom-checker",
+    "title": "UTI Symptom Checker",
+    "description": "Assess urinary tract infection symptoms and determine likelihood",
+    "version": "1.0",
+    "maxScore": 25,
+    "autoAdvance": true,
+    "questions": [
+        {
+            "id": 1,
+            "question": "Do you experience burning or pain when urinating?",
+            "type": "single-choice",
+            "category": "primary-symptom",
+            "options": [
+                {
+                    "text": "Severe burning or sharp pain",
+                    "value": "severe-burning",
+                    "weight": 5,
+                    "icon": "🔥"
+                },
+                {
+                    "text": "Moderate burning sensation",
+                    "value": "moderate-burning",
+                    "weight": 4,
+                    "icon": "😣"
+                },
+                {
+                    "text": "Mild discomfort or stinging",
+                    "value": "mild-discomfort",
+                    "weight": 2,
+                    "icon": "😐"
+                },
+                {
+                    "text": "No burning or pain",
+                    "value": "no-burning",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "How often do you feel the need to urinate?",
+            "type": "single-choice",
+            "category": "frequency",
+            "options": [
+                {
+                    "text": "Very frequently (every 30-60 minutes)",
+                    "value": "very-frequent",
+                    "weight": 4,
+                    "icon": "🚽"
+                },
+                {
+                    "text": "More frequently than usual",
+                    "value": "frequent",
+                    "weight": 3,
+                    "icon": "⏰"
+                },
+                {
+                    "text": "Slightly more than normal",
+                    "value": "slightly-frequent",
+                    "weight": 2,
+                    "icon": "🤔"
+                },
+                {
+                    "text": "Normal frequency",
+                    "value": "normal-frequency",
+                    "weight": 0,
+                    "icon": "✅"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Do you feel a sudden, strong urge to urinate?",
+            "type": "single-choice",
+            "category": "urgency",
+            "options": [
+                {
+                    "text": "Yes, very urgent and difficult to control",
+                    "value": "urgent-strong",
+                    "weight": 4,
+                    "icon": "🚨"
+                },
+                {
+                    "text": "Yes, strong urges",
+                    "value": "urgent-moderate",
+                    "weight": 3,
+                    "icon": "😰"
+                },
+                {
+                    "text": "Occasional urgent feelings",
+                    "value": "urgent-mild",
+                    "weight": 2,
+                    "icon": "😐"
+                },
+                {
+                    "text": "No unusual urgency",
+                    "value": "no-urgency",
+                    "weight": 0,
+                    "icon": "😌"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Have you noticed changes in your urine?",
+            "type": "single-choice",
+            "category": "urine-changes",
+            "options": [
+                {
+                    "text": "Blood in urine (pink, red, or brown)",
+                    "value": "blood-urine",
+                    "weight": 5,
+                    "icon": "🩸"
+                },
+                {
+                    "text": "Cloudy or strong-smelling urine",
+                    "value": "cloudy-smelly",
+                    "weight": 3,
+                    "icon": "☁️"
+                },
+                {
+                    "text": "Dark or more concentrated than usual",
+                    "value": "dark-concentrated",
+                    "weight": 2,
+                    "icon": "🟤"
+                },
+                {
+                    "text": "Urine appears normal",
+                    "value": "normal-urine",
+                    "weight": 0,
+                    "icon": "💧"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Do you have pelvic pain or pressure?",
+            "type": "single-choice",
+            "category": "pelvic-symptoms",
+            "description": "For women: pain in the center of the pelvis around the pubic bone area",
+            "options": [
+                {
+                    "text": "Yes, significant pelvic pain",
+                    "value": "severe-pelvic-pain",
+                    "weight": 3,
+                    "icon": "😰"
+                },
+                {
+                    "text": "Yes, mild pelvic discomfort",
+                    "value": "mild-pelvic-pain",
+                    "weight": 2,
+                    "icon": "😐"
+                },
+                {
+                    "text": "Feeling of pressure only",
+                    "value": "pressure-only",
+                    "weight": 1,
+                    "icon": "😑"
+                },
+                {
+                    "text": "No pelvic pain or pressure",
+                    "value": "no-pelvic-pain",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Do you have any additional symptoms?",
+            "type": "single-choice",
+            "category": "systemic-symptoms",
+            "options": [
+                {
+                    "text": "Fever, chills, or back pain",
+                    "value": "fever-chills",
+                    "weight": 4,
+                    "icon": "🤒"
+                },
+                {
+                    "text": "Nausea, vomiting, or unusual fatigue",
+                    "value": "nausea-fatigue",
+                    "weight": 3,
+                    "icon": "🤢"
+                },
+                {
+                    "text": "Mild general discomfort",
+                    "value": "mild-symptoms",
+                    "weight": 1,
+                    "icon": "😑"
+                },
+                {
+                    "text": "No other symptoms",
+                    "value": "no-other-symptoms",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        }
+    ],
+    "scoring": {
+        "low": {
+            "min": 0,
+            "max": 7,
+            "level": "Low UTI Likelihood",
+            "color": "#4CAF50",
+            "description": "Your symptoms are less likely to indicate a UTI."
+        },
+        "moderate": {
+            "min": 8,
+            "max": 15,
+            "level": "Possible UTI",
+            "color": "#FF9800",
+            "description": "Your symptoms suggest you may have a UTI."
+        },
+        "high": {
+            "min": 16,
+            "max": 25,
+            "level": "Likely UTI",
+            "color": "#F44336",
+            "description": "Your symptoms strongly suggest a UTI."
+        }
+    },
+    "recommendations": {
+        "low": [
+            "Your symptoms may not indicate a UTI",
+            "Stay well-hydrated by drinking plenty of water",
+            "Monitor symptoms and track any changes",
+            "Practice good bathroom hygiene",
+            "Consider other causes if symptoms persist",
+            "Contact healthcare provider if symptoms worsen or persist"
+        ],
+        "moderate": [
+            "You may have a UTI - consider seeing a healthcare provider",
+            "Drink plenty of water to help flush bacteria",
+            "Urinate frequently and completely empty your bladder",
+            "Avoid caffeine, alcohol, and spicy foods that may irritate",
+            "Practice good hygiene and wipe front to back",
+            "Don't delay seeking medical care as UTIs can worsen"
+        ],
+        "high": [
+            "Your symptoms strongly suggest a UTI - seek medical care promptly",
+            "Contact your healthcare provider for proper testing and treatment",
+            "UTIs typically require antibiotic treatment",
+            "Drink lots of water while waiting for medical care",
+            "Don't hold urine - go when you feel the urge",
+            "Seek immediate care if you develop fever, chills, or back pain"
+        ]
+    },
+    "warningSymptoms": [
+        "Fever above 100.4°F (38°C)",
+        "Severe back or side pain",
+        "Chills or shaking",
+        "Nausea and vomiting",
+        "Blood in urine",
+        "Symptoms lasting more than 2 days"
+    ],
+    "metadata": {
+        "basedOn": "Clinical urology guidelines and medical literature",
+        "lastUpdated": "2025-01-31",
+        "targetConditions": ["Cystitis", "Urinary tract infection", "Bladder infection"],
+        "disclaimer": "UTIs require medical diagnosis and treatment. This tool cannot replace professional evaluation."
+    }
+}

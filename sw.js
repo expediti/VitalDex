@@ -2,28 +2,28 @@ const CACHE_NAME = 'healthcheckpro-v1';
 const urlsToCache = [
     '/',
     '/assets/css/main.css',
-    '/assets/css/responsive.css',
     '/assets/js/main.js',
-    '/assets/js/accessibility.js'
+    '/assets/images/logo.png',
+    '/manifest.json'
 ];
 
-self.addEventListener('install', function(event) {
+// Install service worker
+self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
-            .then(function(cache) {
+            .then(cache => {
                 return cache.addAll(urlsToCache);
             })
     );
 });
 
-self.addEventListener('fetch', function(event) {
+// Fetch event
+self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request)
-            .then(function(response) {
-                if (response) {
-                    return response;
-                }
-                return fetch(event.request);
+            .then(response => {
+                // Return cached version or fetch from network
+                return response || fetch(event.request);
             }
         )
     );

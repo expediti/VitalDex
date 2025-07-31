@@ -1,0 +1,205 @@
+{
+    "tool": "anxiety-symptom-checker",
+    "title": "Anxiety Symptom Checker (GAD-7)",
+    "description": "Assess anxiety symptoms using the clinically-validated GAD-7 questionnaire",
+    "version": "1.0",
+    "maxScore": 21,
+    "autoAdvance": false,
+    "basedOn": "GAD-7 (Generalized Anxiety Disorder 7-item scale)",
+    "timeframe": "Over the last 2 weeks",
+    "questions": [
+        {
+            "id": 1,
+            "question": "Feeling nervous, anxious, or on edge",
+            "type": "scale",
+            "category": "anxiety-symptoms",
+            "scaleLabels": {
+                "min": "Not at all",
+                "max": "Nearly every day"
+            },
+            "options": [
+                { "text": "Not at all", "value": "0", "weight": 0 },
+                { "text": "Several days", "value": "1", "weight": 1 },
+                { "text": "More than half the days", "value": "2", "weight": 2 },
+                { "text": "Nearly every day", "value": "3", "weight": 3 }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Not being able to stop or control worrying",
+            "type": "scale",
+            "category": "worry-control",
+            "scaleLabels": {
+                "min": "Not at all",
+                "max": "Nearly every day"
+            },
+            "options": [
+                { "text": "Not at all", "value": "0", "weight": 0 },
+                { "text": "Several days", "value": "1", "weight": 1 },
+                { "text": "More than half the days", "value": "2", "weight": 2 },
+                { "text": "Nearly every day", "value": "3", "weight": 3 }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Worrying too much about different things",
+            "type": "scale",
+            "category": "excessive-worry",
+            "scaleLabels": {
+                "min": "Not at all",
+                "max": "Nearly every day"
+            },
+            "options": [
+                { "text": "Not at all", "value": "0", "weight": 0 },
+                { "text": "Several days", "value": "1", "weight": 1 },
+                { "text": "More than half the days", "value": "2", "weight": 2 },
+                { "text": "Nearly every day", "value": "3", "weight": 3 }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Trouble relaxing",
+            "type": "scale",
+            "category": "relaxation-difficulty",
+            "scaleLabels": {
+                "min": "Not at all",
+                "max": "Nearly every day"
+            },
+            "options": [
+                { "text": "Not at all", "value": "0", "weight": 0 },
+                { "text": "Several days", "value": "1", "weight": 1 },
+                { "text": "More than half the days", "value": "2", "weight": 2 },
+                { "text": "Nearly every day", "value": "3", "weight": 3 }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Being so restless that it's hard to sit still",
+            "type": "scale",
+            "category": "restlessness",
+            "scaleLabels": {
+                "min": "Not at all",
+                "max": "Nearly every day"
+            },
+            "options": [
+                { "text": "Not at all", "value": "0", "weight": 0 },
+                { "text": "Several days", "value": "1", "weight": 1 },
+                { "text": "More than half the days", "value": "2", "weight": 2 },
+                { "text": "Nearly every day", "value": "3", "weight": 3 }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Becoming easily annoyed or irritable",
+            "type": "scale",
+            "category": "irritability",
+            "scaleLabels": {
+                "min": "Not at all",
+                "max": "Nearly every day"
+            },
+            "options": [
+                { "text": "Not at all", "value": "0", "weight": 0 },
+                { "text": "Several days", "value": "1", "weight": 1 },
+                { "text": "More than half the days", "value": "2", "weight": 2 },
+                { "text": "Nearly every day", "value": "3", "weight": 3 }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Feeling afraid as if something awful might happen",
+            "type": "scale",
+            "category": "catastrophic-thinking",
+            "scaleLabels": {
+                "min": "Not at all",
+                "max": "Nearly every day"
+            },
+            "options": [
+                { "text": "Not at all", "value": "0", "weight": 0 },
+                { "text": "Several days", "value": "1", "weight": 1 },
+                { "text": "More than half the days", "value": "2", "weight": 2 },
+                { "text": "Nearly every day", "value": "3", "weight": 3 }
+            ]
+        }
+    ],
+    "scoring": {
+        "low": {
+            "min": 0,
+            "max": 4,
+            "level": "Minimal Anxiety",
+            "color": "#4CAF50",
+            "description": "Your anxiety levels appear to be minimal and within normal range."
+        },
+        "moderate": {
+            "min": 5,
+            "max": 9,
+            "level": "Mild Anxiety",
+            "color": "#FF9800",
+            "description": "You may be experiencing mild anxiety symptoms."
+        },
+        "high": {
+            "min": 10,
+            "max": 21,
+            "level": "Moderate to Severe Anxiety",
+            "color": "#F44336",
+            "description": "Your responses suggest moderate to severe anxiety symptoms."
+        }
+    },
+    "recommendations": {
+        "low": [
+            "Your anxiety levels appear to be within a normal range",
+            "Continue practicing healthy stress management techniques",
+            "Maintain regular exercise, sleep, and social connections",
+            "Practice mindfulness or relaxation techniques for general wellness",
+            "Monitor your mental health and seek help if symptoms increase",
+            "Consider stress-reduction activities like meditation or yoga"
+        ],
+        "moderate": [
+            "You may be experiencing mild anxiety that could benefit from attention",
+            "Try relaxation techniques: deep breathing, progressive muscle relaxation",
+            "Consider regular exercise, which is proven to reduce anxiety",
+            "Limit caffeine and alcohol intake",
+            "Practice good sleep hygiene and stress management",
+            "Consider speaking with a healthcare provider or counselor if symptoms persist",
+            "Try mindfulness, meditation, or anxiety management apps"
+        ],
+        "high": [
+            "Your results suggest significant anxiety that may benefit from professional support",
+            "Consider speaking with a healthcare provider or mental health professional",
+            "Anxiety disorders are treatable with therapy, medication, or both",
+            "Practice immediate anxiety management: deep breathing, grounding techniques",
+            "Reach out to trusted friends, family, or support groups",
+            "Consider cognitive-behavioral therapy (CBT), which is very effective for anxiety",
+            "Don't hesitate to seek professional help - anxiety is a common, treatable condition"
+        ]
+    },
+    "crisisResources": {
+        "immediate": [
+            "988 Suicide & Crisis Lifeline: Call or text 988",
+            "Crisis Text Line: Text HOME to 741741",
+            "Local emergency services: 911"
+        ],
+        "ongoing": [
+            "Psychology Today therapist directory",
+            "Your primary care physician",
+            "Employee Assistance Programs (EAP)",
+            "Community mental health centers"
+        ]
+    },
+    "gad7Info": {
+        "description": "The GAD-7 is a validated screening tool for generalized anxiety disorder",
+        "developer": "Spitzer et al., 2006",
+        "purpose": "Screening and severity measurement for anxiety",
+        "cutoffScores": {
+            "minimal": "0-4: Minimal anxiety",
+            "mild": "5-9: Mild anxiety", 
+            "moderate": "10-14: Moderate anxiety",
+            "severe": "15-21: Severe anxiety"
+        }
+    },
+    "metadata": {
+        "basedOn": "GAD-7 Generalized Anxiety Disorder Scale",
+        "lastUpdated": "2025-01-31",
+        "targetConditions": ["Generalized Anxiety Disorder", "Anxiety symptoms", "Worry"],
+        "disclaimer": "This is a screening tool, not a diagnostic instrument. Professional evaluation is recommended for concerning scores."
+    }
+}

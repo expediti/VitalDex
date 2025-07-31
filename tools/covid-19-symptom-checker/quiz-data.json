@@ -1,0 +1,331 @@
+{
+    "tool": "covid-19-symptom-checker",
+    "title": "COVID-19 Symptom Checker",
+    "description": "Assess your COVID-19 symptoms based on WHO guidelines",
+    "version": "1.0",
+    "maxScore": 32,
+    "autoAdvance": true,
+    "questions": [
+        {
+            "id": 1,
+            "question": "Do you currently have a fever above 100.4°F (38°C)?",
+            "type": "single-choice",
+            "category": "primary-symptom",
+            "options": [
+                {
+                    "text": "Yes, high fever (above 102°F/39°C)",
+                    "value": "high-fever",
+                    "weight": 4,
+                    "icon": "🌡️"
+                },
+                {
+                    "text": "Yes, mild fever (100.4-102°F/38-39°C)",
+                    "value": "mild-fever",
+                    "weight": 3,
+                    "icon": "🌡️"
+                },
+                {
+                    "text": "No fever",
+                    "value": "no-fever",
+                    "weight": 0,
+                    "icon": "❄️"
+                },
+                {
+                    "text": "I'm not sure / haven't checked",
+                    "value": "unsure",
+                    "weight": 1,
+                    "icon": "🤔"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Are you experiencing a cough?",
+            "type": "single-choice",
+            "category": "primary-symptom",
+            "options": [
+                {
+                    "text": "Yes, severe persistent cough",
+                    "value": "severe-cough",
+                    "weight": 4,
+                    "icon": "😷"
+                },
+                {
+                    "text": "Yes, dry cough",
+                    "value": "dry-cough",
+                    "weight": 3,
+                    "icon": "😮"
+                },
+                {
+                    "text": "Yes, cough with mucus",
+                    "value": "wet-cough",
+                    "weight": 2,
+                    "icon": "💧"
+                },
+                {
+                    "text": "Mild occasional cough",
+                    "value": "mild-cough",
+                    "weight": 1,
+                    "icon": "😤"
+                },
+                {
+                    "text": "No cough",
+                    "value": "no-cough",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Have you lost your sense of taste or smell?",
+            "type": "single-choice",
+            "category": "distinctive-symptom",
+            "options": [
+                {
+                    "text": "Complete loss of taste and smell",
+                    "value": "complete-loss",
+                    "weight": 5,
+                    "icon": "👃"
+                },
+                {
+                    "text": "Partial loss of taste or smell",
+                    "value": "partial-loss",
+                    "weight": 3,
+                    "icon": "👃"
+                },
+                {
+                    "text": "No change in taste or smell",
+                    "value": "no-change",
+                    "weight": 0,
+                    "icon": "😋"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Are you experiencing shortness of breath or difficulty breathing?",
+            "type": "single-choice",
+            "category": "severe-symptom",
+            "options": [
+                {
+                    "text": "Severe difficulty breathing",
+                    "value": "severe-breathing",
+                    "weight": 6,
+                    "icon": "🫁"
+                },
+                {
+                    "text": "Moderate shortness of breath",
+                    "value": "moderate-breathing",
+                    "weight": 4,
+                    "icon": "😰"
+                },
+                {
+                    "text": "Mild shortness of breath with activity",
+                    "value": "mild-breathing",
+                    "weight": 2,
+                    "icon": "😤"
+                },
+                {
+                    "text": "No breathing difficulties",
+                    "value": "no-breathing",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Do you have body aches, fatigue, or feel generally unwell?",
+            "type": "single-choice",
+            "category": "general-symptom",
+            "options": [
+                {
+                    "text": "Severe fatigue and body aches",
+                    "value": "severe-fatigue",
+                    "weight": 3,
+                    "icon": "😴"
+                },
+                {
+                    "text": "Moderate fatigue and some aches",
+                    "value": "moderate-fatigue",
+                    "weight": 2,
+                    "icon": "😑"
+                },
+                {
+                    "text": "Mild fatigue",
+                    "value": "mild-fatigue",
+                    "weight": 1,
+                    "icon": "🙄"
+                },
+                {
+                    "text": "Feeling normal",
+                    "value": "no-fatigue",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Do you have a sore throat or runny nose?",
+            "type": "single-choice",
+            "category": "general-symptom",
+            "options": [
+                {
+                    "text": "Both sore throat and runny nose",
+                    "value": "both-symptoms",
+                    "weight": 2,
+                    "icon": "🤧"
+                },
+                {
+                    "text": "Sore throat only",
+                    "value": "sore-throat",
+                    "weight": 1,
+                    "icon": "😣"
+                },
+                {
+                    "text": "Runny nose only",
+                    "value": "runny-nose",
+                    "weight": 1,
+                    "icon": "🤧"
+                },
+                {
+                    "text": "Neither",
+                    "value": "neither",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Have you been in close contact with someone confirmed to have COVID-19?",
+            "type": "single-choice",
+            "category": "exposure-risk",
+            "description": "Close contact means within 6 feet for 15+ minutes in the past 14 days",
+            "options": [
+                {
+                    "text": "Yes, confirmed close contact",
+                    "value": "confirmed-contact",
+                    "weight": 4,
+                    "icon": "👥"
+                },
+                {
+                    "text": "Possible contact / unsure",
+                    "value": "possible-contact",
+                    "weight": 2,
+                    "icon": "🤷"
+                },
+                {
+                    "text": "No known contact",
+                    "value": "no-contact",
+                    "weight": 0,
+                    "icon": "🛡️"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "When did your symptoms first appear?",
+            "type": "single-choice",
+            "category": "timeline",
+            "options": [
+                {
+                    "text": "Today",
+                    "value": "today",
+                    "weight": 3,
+                    "icon": "📅"
+                },
+                {
+                    "text": "1-3 days ago",
+                    "value": "1-3-days",
+                    "weight": 3,
+                    "icon": "📅"
+                },
+                {
+                    "text": "4-7 days ago",
+                    "value": "4-7-days",
+                    "weight": 2,
+                    "icon": "📅"
+                },
+                {
+                    "text": "More than a week ago",
+                    "value": "over-week",
+                    "weight": 1,
+                    "icon": "📅"
+                },
+                {
+                    "text": "I don't have symptoms",
+                    "value": "no-symptoms",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        }
+    ],
+    "scoring": {
+        "low": {
+            "min": 0,
+            "max": 8,
+            "level": "Low Risk",
+            "color": "#4CAF50",
+            "description": "Your symptoms suggest a low likelihood of COVID-19."
+        },
+        "moderate": {
+            "min": 9,
+            "max": 16,
+            "level": "Moderate Risk",
+            "color": "#FF9800",
+            "description": "Your symptoms suggest a moderate likelihood of COVID-19."
+        },
+        "high": {
+            "min": 17,
+            "max": 32,
+            "level": "High Risk",
+            "color": "#F44336",
+            "description": "Your symptoms suggest a high likelihood of COVID-19."
+        }
+    },
+    "recommendations": {
+        "low": [
+            "Continue monitoring your symptoms daily",
+            "Practice good hygiene: wash hands frequently, wear masks",
+            "Maintain social distancing when in public",
+            "Consider getting tested if you've been exposed or symptoms worsen",
+            "Stay home if you feel unwell",
+            "Contact your healthcare provider if symptoms change or persist"
+        ],
+        "moderate": [
+            "Get tested for COVID-19 as soon as possible",
+            "Self-isolate immediately until you receive test results",
+            "Monitor your symptoms closely and track any changes",
+            "Avoid contact with others, especially high-risk individuals",
+            "Wear a mask if you must be around others",
+            "Contact your healthcare provider for further guidance",
+            "Stay hydrated and get plenty of rest"
+        ],
+        "high": [
+            "Seek immediate medical evaluation, especially if breathing difficulties worsen",
+            "Get tested for COVID-19 immediately",
+            "Self-isolate completely and avoid all contact with others",
+            "Contact your healthcare provider or local health department immediately",
+            "Consider calling emergency services if you experience severe breathing problems",
+            "Inform close contacts about potential exposure",
+            "Monitor symptoms continuously and seek emergency care for severe symptoms"
+        ]
+    },
+    "emergencySymptoms": [
+        "Severe difficulty breathing or shortness of breath",
+        "Persistent chest pain or pressure",
+        "New confusion or inability to stay awake",
+        "Bluish lips or face",
+        "High fever that doesn't respond to medication"
+    ],
+    "metadata": {
+        "basedOn": "WHO and CDC guidelines",
+        "lastUpdated": "2025-01-31",
+        "validityPeriod": "Current guidelines as of date",
+        "disclaimer": "This tool is for informational purposes only and cannot replace professional medical evaluation."
+    }
+}

@@ -1,0 +1,351 @@
+{
+    "tool": "asthma-symptom-checker",
+    "title": "Asthma Symptom Checker",
+    "description": "Assess respiratory symptoms to determine likelihood of asthma",
+    "version": "1.0",
+    "maxScore": 28,
+    "autoAdvance": true,
+    "questions": [
+        {
+            "id": 1,
+            "question": "Are you experiencing shortness of breath or difficulty breathing?",
+            "type": "single-choice",
+            "category": "breathing-difficulty",
+            "options": [
+                {
+                    "text": "Severe difficulty breathing at rest",
+                    "value": "severe-breathing",
+                    "weight": 4,
+                    "icon": "🫁"
+                },
+                {
+                    "text": "Moderate difficulty with light activity",
+                    "value": "moderate-breathing",
+                    "weight": 3,
+                    "icon": "😮‍💨"
+                },
+                {
+                    "text": "Mild shortness of breath with exertion",
+                    "value": "mild-breathing",
+                    "weight": 2,
+                    "icon": "😤"
+                },
+                {
+                    "text": "No breathing difficulties",
+                    "value": "no-breathing",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Do you have wheezing or whistling sounds when breathing?",
+            "type": "single-choice",
+            "category": "wheezing",
+            "options": [
+                {
+                    "text": "Loud wheezing audible without stethoscope",
+                    "value": "audible-wheezing",
+                    "weight": 4,
+                    "icon": "🎵"
+                },
+                {
+                    "text": "Wheezing that comes and goes",
+                    "value": "mild-wheezing",
+                    "weight": 3,
+                    "icon": "🔊"
+                },
+                {
+                    "text": "Occasional whistling sounds",
+                    "value": "occasional-wheezing",
+                    "weight": 2,
+                    "icon": "🔉"
+                },
+                {
+                    "text": "No wheezing sounds",
+                    "value": "no-wheezing",
+                    "weight": 0,
+                    "icon": "🔇"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Do you have chest tightness or pain?",
+            "type": "single-choice",
+            "category": "chest-symptoms",
+            "options": [
+                {
+                    "text": "Severe chest tightness or pressure",
+                    "value": "severe-tightness",
+                    "weight": 3,
+                    "icon": "🫷"
+                },
+                {
+                    "text": "Moderate chest tightness",
+                    "value": "moderate-tightness",
+                    "weight": 2,
+                    "icon": "😣"
+                },
+                {
+                    "text": "Mild chest discomfort",
+                    "value": "mild-tightness",
+                    "weight": 1,
+                    "icon": "😐"
+                },
+                {
+                    "text": "No chest tightness",
+                    "value": "no-tightness",
+                    "weight": 0,
+                    "icon": "😌"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Do you have a persistent cough?",
+            "type": "single-choice",
+            "category": "cough",
+            "options": [
+                {
+                    "text": "Persistent dry cough, especially at night",
+                    "value": "dry-persistent-cough",
+                    "weight": 3,
+                    "icon": "😷"
+                },
+                {
+                    "text": "Cough with clear or white mucus",
+                    "value": "productive-cough",
+                    "weight": 2,
+                    "icon": "🤧"
+                },
+                {
+                    "text": "Occasional cough",
+                    "value": "occasional-cough",
+                    "weight": 1,
+                    "icon": "😤"
+                },
+                {
+                    "text": "No cough",
+                    "value": "no-cough",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "When do your breathing symptoms occur most?",
+            "type": "single-choice",
+            "category": "triggers",
+            "options": [
+                {
+                    "text": "During or after exercise/physical activity",
+                    "value": "exercise-induced",
+                    "weight": 3,
+                    "icon": "🏃"
+                },
+                {
+                    "text": "At night or early morning",
+                    "value": "nighttime",
+                    "weight": 3,
+                    "icon": "🌙"
+                },
+                {
+                    "text": "Around allergens, dust, smoke, or strong odors",
+                    "value": "environmental-triggers",
+                    "weight": 3,
+                    "icon": "🌪️"
+                },
+                {
+                    "text": "Randomly, no clear pattern",
+                    "value": "random-occurrence",
+                    "weight": 1,
+                    "icon": "🎲"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Do you have a history of allergies?",
+            "type": "single-choice",
+            "category": "allergies",
+            "options": [
+                {
+                    "text": "Yes, severe allergies (seasonal, food, or environmental)",
+                    "value": "severe-allergies",
+                    "weight": 3,
+                    "icon": "🤧"
+                },
+                {
+                    "text": "Yes, mild allergies",
+                    "value": "mild-allergies",
+                    "weight": 2,
+                    "icon": "😮‍💨"
+                },
+                {
+                    "text": "No known allergies",
+                    "value": "no-known-allergies",
+                    "weight": 0,
+                    "icon": "✅"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Do you have a family history of asthma or allergies?",
+            "type": "single-choice",
+            "category": "family-history",
+            "options": [
+                {
+                    "text": "Yes, family members have asthma",
+                    "value": "family-asthma",
+                    "weight": 2,
+                    "icon": "👨‍👩‍👧‍👦"
+                },
+                {
+                    "text": "Yes, family members have allergies",
+                    "value": "family-allergies",
+                    "weight": 1,
+                    "icon": "👥"
+                },
+                {
+                    "text": "No family history of asthma or allergies",
+                    "value": "no-family-history",
+                    "weight": 0,
+                    "icon": "🚫"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "How long have you been experiencing these breathing symptoms?",
+            "type": "single-choice",
+            "category": "duration",
+            "options": [
+                {
+                    "text": "Recent onset (days to weeks)",
+                    "value": "recent-onset",
+                    "weight": 2,
+                    "icon": "📅"
+                },
+                {
+                    "text": "Several months",
+                    "value": "several-months",
+                    "weight": 3,
+                    "icon": "📆"
+                },
+                {
+                    "text": "Years, on and off",
+                    "value": "years",
+                    "weight": 3,
+                    "icon": "🗓️"
+                },
+                {
+                    "text": "Since childhood",
+                    "value": "childhood",
+                    "weight": 4,
+                    "icon": "👶"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Do you currently use or have you used breathing medications?",
+            "type": "single-choice",
+            "category": "medications",
+            "options": [
+                {
+                    "text": "Yes, rescue inhaler (albuterol/salbutamol)",
+                    "value": "rescue-inhaler",
+                    "weight": 4,
+                    "icon": "💨"
+                },
+                {
+                    "text": "Yes, daily controller medications",
+                    "value": "daily-controller",
+                    "weight": 4,
+                    "icon": "📋"
+                },
+                {
+                    "text": "Used breathing medications in the past",
+                    "value": "past-medications",
+                    "weight": 2,
+                    "icon": "⏰"
+                },
+                {
+                    "text": "Never used breathing medications",
+                    "value": "no-medications",
+                    "weight": 0,
+                    "icon": "🚫"
+                }
+            ]
+        }
+    ],
+    "scoring": {
+        "low": {
+            "min": 0,
+            "max": 9,
+            "level": "Low Asthma Likelihood",
+            "color": "#4CAF50",
+            "description": "Your symptoms are less likely to indicate asthma."
+        },
+        "moderate": {
+            "min": 10,
+            "max": 18,
+            "level": "Possible Asthma",
+            "color": "#FF9800",
+            "description": "Your symptoms suggest possible asthma that warrants evaluation."
+        },
+        "high": {
+            "min": 19,
+            "max": 28,
+            "level": "Likely Asthma",
+            "color": "#F44336",
+            "description": "Your symptoms strongly suggest asthma."
+        }
+    },
+    "recommendations": {
+        "low": [
+            "Your respiratory symptoms are less likely to be asthma",
+            "Continue monitoring your breathing patterns and triggers",
+            "Consider other causes like respiratory infections or allergies",
+            "Maintain good respiratory health with regular exercise",
+            "Avoid known irritants like smoke and strong odors",
+            "Contact healthcare provider if symptoms worsen or persist"
+        ],
+        "moderate": [
+            "Your symptoms suggest possible asthma - consider medical evaluation",
+            "Keep a diary of symptoms and potential triggers",
+            "Avoid known respiratory irritants and allergens",
+            "Consider seeing a healthcare provider for lung function testing",
+            "Learn about proper breathing techniques",
+            "Don't ignore persistent respiratory symptoms",
+            "Seek prompt care if symptoms worsen"
+        ],
+        "high": [
+            "Your symptoms strongly suggest asthma - seek medical evaluation",
+            "Schedule appointment with healthcare provider or pulmonologist",
+            "Lung function tests (spirometry) may be recommended",
+            "Avoid all known triggers and irritants",
+            "Consider carrying a rescue inhaler if prescribed",
+            "Learn to recognize early warning signs of asthma attacks",
+            "Seek immediate care for severe breathing difficulties"
+        ]
+    },
+    "emergencySymptoms": [
+        "Severe difficulty breathing or gasping for air",
+        "Inability to speak in full sentences due to breathlessness",
+        "Bluish color around lips or fingernails",
+        "Chest retractions (skin pulling in around ribs when breathing)",
+        "Peak flow readings in red zone (if you have a peak flow meter)",
+        "Rescue inhaler not providing relief"
+    ],
+    "metadata": {
+        "basedOn": "Clinical respiratory guidelines and asthma diagnostic criteria",
+        "lastUpdated": "2025-07-31",
+        "targetConditions": ["Asthma", "Exercise-induced bronchospasm", "Allergic asthma"],
+        "disclaimer": "This tool cannot replace professional medical evaluation. Asthma requires proper diagnosis and management by a healthcare provider."
+    }
+}

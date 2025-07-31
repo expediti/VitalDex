@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asthma Symptom Checker - Free Respiratory Assessment Tool | HealthCheckPro</title>
+    <meta name="description" content="Free asthma symptom checker. Assess wheezing, shortness of breath, cough, and other respiratory symptoms. Get instant results and breathing guidance.">
+    <meta name="keywords" content="asthma symptoms, wheezing, shortness of breath, respiratory problems, breathing difficulties, chest tightness">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Asthma Symptom Checker - Free Assessment">
+    <meta property="og:description" content="Assess breathing difficulties and asthma symptoms with our respiratory health evaluation tool.">
+    <meta property="og:url" content="https://healthcheckpro.com/tools/asthma-symptom-checker/">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "name": "Asthma Symptom Checker",
+        "description": "Free online tool to assess asthma and respiratory symptoms",
+        "url": "https://healthcheckpro.com/tools/asthma-symptom-checker/",
+        "mainContentOfPage": {
+            "@type": "HealthTopicContent",
+            "hasHealthAspect": ["SymptomAssessment", "RespiratoryHealth"]
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://healthcheckpro.com"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Health Tools",
+                    "item": "https://healthcheckpro.com/tools/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,  
+                    "name": "Asthma Checker",
+                    "item": "https://healthcheckpro.com/tools/asthma-symptom-checker/"
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/tools.css">
+    <link rel="canonical" href="https://healthcheckpro.com/tools/asthma-symptom-checker/">
+</head>
+<body>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="/tools/">Tools</a></li>
+                <li aria-current="page">Asthma Checker</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Tool Header -->
+    <header class="tool-header">
+        <div class="container">
+            <div class="tool-info">
+                <div class="tool-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C8.13 2 5 5.13 5 9C5 12.87 8.13 16 12 16S19 12.87 19 9C19 5.13 15.87 2 12 2Z" fill="#3F51B5"/>
+                        <path d="M5 18C7 16 17 16 19 18V20H5V18Z" fill="#3F51B5"/>
+                        <circle cx="9" cy="8" r="1" fill="#fff"/>
+                        <circle cx="15" cy="8" r="1" fill="#fff"/>
+                    </svg>
+                </div>
+                <div class="tool-details">
+                    <h1>Asthma Symptom Checker</h1>
+                    <p>Assess breathing difficulties and respiratory symptoms with our comprehensive asthma evaluation tool. This assessment helps identify asthma-related symptoms and provides guidance on management and when to seek care.</p>
+                    <div class="tool-meta">
+                        <span>📋 4-5 minutes</span>
+                        <span>❓ 9 questions</span>
+                        <span>🫁 Respiratory focused</span>
+                        <span>🔒 Private assessment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quiz Container -->
+    <main class="quiz-container">
+        <div class="container">
+            <!-- Progress Section -->
+            <div class="progress-section">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <span class="progress-text">Question 1 of 9</span>
+            </div>
+
+            <!-- Quiz Questions -->
+            <div class="quiz-content">
+                <!-- Question 1 -->
+                <div class="question active" data-question="1">
+                    <span class="question-number">Question 1 of 9</span>
+                    <h2>Are you experiencing shortness of breath or difficulty breathing?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="severe-breathing" data-weight="4">
+                            <span class="icon">🫁</span>
+                            <span class="text">Severe difficulty breathing at rest</span>
+                        </button>
+                        <button class="answer-btn" data-value="moderate-breathing" data-weight="3">
+                            <span class="icon">😮‍💨</span>
+                            <span class="text">Moderate difficulty with light activity</span>
+                        </button>
+                        <button class="answer-btn" data-value="mild-breathing" data-weight="2">
+                            <span class="icon">😤</span>
+                            <span class="text">Mild shortness of breath with exertion</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-breathing" data-weight="0">
+                            <span class="icon">😊</span>
+                            <span class="text">No breathing difficulties</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question" data-question="2">
+                    <span class="question-number">Question 2 of 9</span>
+                    <h2>Do you have wheezing or whistling sounds when breathing?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="audible-wheezing" data-weight="4">
+                            <span class="icon">🎵</span>
+                            <span class="text">Loud wheezing audible without stethoscope</span>  
+                        </button>
+                        <button class="answer-btn" data-value="mild-wheezing" data-weight="3">
+                            <span class="icon">🔊</span>
+                            <span class="text">Wheezing that comes and goes</span>
+                        </button>
+                        <button class="answer-btn" data-value="occasional-wheezing" data-weight="2">
+                            <span class="icon">🔉</span>
+                            <span class="text">Occasional whistling sounds</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-wheezing" data-weight="0">
+                            <span class="icon">🔇</span>
+                            <span class="text">No wheezing sounds</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question" data-question="3">
+                    <span class="question-number">Question 3 of 9</span>
+                    <h2>Do you have chest tightness or pain?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="severe-tightness" data-weight="3">
+                            <span class="icon">🫷</span>
+                            <span class="text">Severe chest tightness or pressure</span>
+                        </button>
+                        <button class="answer-btn" data-value="moderate-tightness" data-weight="2">
+                            <span class="icon">😣</span>
+                            <span class="text">Moderate chest tightness</span>
+                        </button>
+                        <button class="answer-btn" data-value="mild-tightness" data-weight="1">
+                            <span class="icon">😐</span>
+                            <span class="text">Mild chest discomfort</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-tightness" data-weight="0">
+                            <span class="icon">😌</span>
+                            <span class="text">No chest tightness</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question" data-question="4">
+                    <span class="question-number">Question 4 of 9</span>
+                    <h2>Do you have a persistent cough?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="dry-persistent-cough" data-weight="3">
+                            <span class="icon">😷</span>
+                            <span class="text">Persistent dry cough, especially at night</span>
+                        </button>
+                        <button class="answer-btn" data-value="productive-cough" data-weight="2">
+                            <span class="icon">🤧</span>
+                            <span class="text">Cough with clear or white mucus</span>
+                        </button>
+                        <button class="answer-btn" data-value="occasional-cough" data-weight="1">
+                            <span class="icon">😤</span>
+                            <span class="text">Occasional cough</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-cough" data-weight="0">
+                            <span class="icon">😊</span>
+                            <span class="text">No cough</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question" data-question="5">
+                    <span class="question-number">Question 5 of 9</span>
+                    <h2>When do your breathing symptoms occur most?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="exercise-induced" data-weight="3">
+                            <span class="icon">🏃</span>
+                            <span class="text">During or after exercise/physical activity</span>
+                        </button>
+                        <button class="answer-btn" data-value="nighttime" data-weight="3">
+                            <span class="icon">🌙</span>
+                            <span class="text">At night or early morning</span>
+                        </button>
+                        <button class="answer-btn" data-value="environmental-triggers" data-weight="3">
+                            <span class="icon">🌪️</span>
+                            <span class="text">Around allergens, dust, smoke, or strong odors</span>
+                        </button>
+                        <button class="answer-btn" data-value="random-occurrence" data-weight="1">
+                            <span class="icon">🎲</span>
+                            <span class="text">Randomly, no clear pattern</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question" data-question="6">
+                    <span class="question-number">Question 6 of 9</span>
+                    <h2>Do you have a history of allergies?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="severe-allergies" data-weight="3">
+                            <span class="icon">🤧</span>
+                            <span class="text">Yes, severe allergies (seasonal, food, or environmental)</span>
+                        </button>
+                        <button class="answer-btn" data-value="mild-allergies" data-weight="2">
+                            <span class="icon">😮‍💨</span>
+                            <span class="text">Yes, mild allergies</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-known-allergies" data-weight="0">
+                            <span class="icon">✅</span>
+                            <span class="text">No known allergies</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="question" data-question="7">
+                    <span class="question-number">Question 7 of 9</span>
+                    <h2>Do you have a family history of asthma or allergies?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="family-asthma" data-weight="2">
+                            <span class="icon">👨‍👩‍👧‍👦</span>
+                            <span class="text">Yes, family members have asthma</span>
+                        </button>
+                        <button class="answer-btn" data-value="family-allergies" data-weight="1">
+                            <span class="icon">👥</span>
+                            <span class="text">Yes, family members have allergies</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-family-history" data-weight="0">
+                            <span class="icon">🚫</span>
+                            <span class="text">No family history of asthma or allergies</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="question" data-question="8">
+                    <span class="question-number">Question 8 of 9</span>
+                    <h2>How long have you been experiencing these breathing symptoms?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="recent-onset" data-weight="2">
+                            <span class="icon">📅</span>
+                            <span class="text">Recent onset (days to weeks)</span>
+                        </button>
+                        <button class="answer-btn" data-value="several-months" data-weight="3">
+                            <span class="icon">📆</span>
+                            <span class="text">Several months</span>
+                        </button>
+                        <button class="answer-btn" data-value="years" data-weight="3">
+                            <span class="icon">🗓️</span>
+                            <span class="text">Years, on and off</span>
+                        </button>
+                        <button class="answer-btn" data-value="childhood" data-weight="4">
+                            <span class="icon">👶</span>
+                            <span class="text">Since childhood</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="question" data-question="9">
+                    <span class="question-number">Question 9 of 9</span>
+                    <h2>Do you currently use or have you used breathing medications?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="rescue-inhaler" data-weight="4">
+                            <span class="icon">💨</span>
+                            <span class="text">Yes, rescue inhaler (albuterol/salbutamol)</span>
+                        </button>
+                        <button class="answer-btn" data-value="daily-controller" data-weight="4">
+                            <span class="icon">📋</span>
+                            <span class="text">Yes, daily controller medications</span>
+                        </button>
+                        <button class="answer-btn" data-value="past-medications" data-weight="2">
+                            <span class="icon">⏰</span>
+                            <span class="text">Used breathing medications in the past</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-medications" data-weight="0">
+                            <span class="icon">🚫</span>
+                            <span class="text">Never used breathing medications</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="quiz-navigation">
+                <button id="prevBtn" class="btn-secondary" disabled>← Previous</button>
+                <button id="nextBtn" class="btn-primary" disabled>Next →</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Results Section -->
+    <section class="results-section" id="resultsSection" style="display: none;">
+        <div class="container">
+            <div class="results-content">
+                <div class="result-header">
+                    <h2>Your Asthma Risk Assessment</h2>
+                    <p>Based on your respiratory symptoms, here's your evaluation:</p>
+                </div>
+                
+                <div class="result-score">
+                    <div class="score-circle">
+                        <div class="score-content">
+                            <span class="score-number">0</span>
+                            <span class="score-label">Risk Score</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="risk-level">Assessment Complete</div>
+                
+                <div class="result-interpretation">
+                    <h3>What This Means</h3>
+                    <p id="interpretation-text">Your results will appear here...</p>
+                    <ul id="recommendations-list">
+                        <!-- Recommendations will be inserted here -->
+                    </ul>
+                </div>
+
+                <div class="emergency-warning" style="display: none;">
+                    <h4>🚨 Seek Immediate Medical Attention</h4>
+                    <p>Based on your severe breathing symptoms, you should seek immediate medical care. If you're having severe difficulty breathing, call emergency services immediately.</p>
+                    <div style="text-align: center; margin: 1rem 0;">
+                        <a href="tel:911" style="background: #ff4444; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">Call 911 - Emergency</a>
+                    </div>
+                </div>
+
+                <div class="result-actions">
+                    <button class="restart-quiz">Take Assessment Again</button>
+                    <a href="/blog/asthma-management-guide/" class="btn-primary">Learn About Asthma</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Content -->
+    <section class="related-content">
+        <div class="container">
+            <h2>Asthma & Respiratory Health</h2>
+            <div class="related-grid">
+                <div class="related-card">
+                    <h3><a href="/blog/asthma-triggers-guide/">Common Asthma Triggers and How to Avoid Them</a></h3>
+                    <p>Learn about environmental, allergic, and exercise-induced asthma triggers, plus practical avoidance strategies.</p>
+                </div>
+                <div class="related-card">
+                    <h3><a href="/blog/using-inhaler-correctly/">How to Use Your Inhaler Correctly</a></h3>
+                    <p>Step-by-step guides for different types of inhalers to ensure you get the maximum benefit from your medication.</p>
+                </div>
+                <div class="related-card">
+                    <h3><a href="/blog/asthma-emergency-action-plan/">Creating an Asthma Emergency Action Plan</a></h3>
+                    <p>Essential information about recognizing asthma emergencies and having a plan ready for severe attacks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Disclaimer -->
+    <section class="disclaimer-section">
+        <div class="container">
+            <div class="disclaimer-content">
+                <h3>⚠️ Important Medical Disclaimer</h3>
+                <p>This assessment tool is for educational purposes only and cannot replace professional medical evaluation. Asthma requires proper medical diagnosis and management. If you're experiencing severe breathing difficulties, chest pain, or inability to speak in full sentences due to breathlessness, seek emergency medical care immediately. Always consult with a healthcare provider for proper asthma diagnosis and treatment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/symptom-checker.js"></script>
+</body>
+</html>

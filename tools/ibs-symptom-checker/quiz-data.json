@@ -1,0 +1,368 @@
+{
+    "tool": "ibs-symptom-checker",
+    "title": "IBS Symptom Checker (Rome IV)",
+    "description": "Assess irritable bowel syndrome symptoms based on Rome IV criteria",
+    "version": "1.0",
+    "maxScore": 27,
+    "autoAdvance": true,
+    "basedOn": "Rome IV Criteria for IBS Diagnosis",
+    "timeframe": "Over the past 3 months",
+    "questions": [
+        {
+            "id": 1,
+            "question": "How long have you been experiencing digestive symptoms?",
+            "type": "single-choice",
+            "category": "duration",
+            "options": [
+                {
+                    "text": "More than 6 months",
+                    "value": "over-6-months",
+                    "weight": 4,
+                    "icon": "📅"
+                },
+                {
+                    "text": "3-6 months",
+                    "value": "3-6-months",
+                    "weight": 3,
+                    "icon": "📅"
+                },
+                {
+                    "text": "1-3 months",
+                    "value": "1-3-months",
+                    "weight": 2,
+                    "icon": "📅"
+                },
+                {
+                    "text": "Less than 1 month",
+                    "value": "less-month",
+                    "weight": 1,
+                    "icon": "📅"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "How often do you experience abdominal pain or discomfort?",
+            "type": "single-choice",
+            "category": "pain-frequency",
+            "options": [
+                {
+                    "text": "Daily or almost daily",
+                    "value": "daily",
+                    "weight": 4,
+                    "icon": "😰"
+                },
+                {
+                    "text": "Several times per week",
+                    "value": "several-times-week",
+                    "weight": 3,
+                    "icon": "😣"
+                },
+                {
+                    "text": "About once a week",
+                    "value": "weekly",
+                    "weight": 2,
+                    "icon": "😐"
+                },
+                {
+                    "text": "Rarely or never",
+                    "value": "rarely",
+                    "weight": 1,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Is your abdominal pain related to bowel movements?",
+            "type": "single-choice",
+            "category": "pain-relation",
+            "options": [
+                {
+                    "text": "Always gets better after bowel movement",
+                    "value": "always-related",
+                    "weight": 4,
+                    "icon": "✅"
+                },
+                {
+                    "text": "Usually gets better after bowel movement",
+                    "value": "usually-related",
+                    "weight": 3,
+                    "icon": "🤔"
+                },
+                {
+                    "text": "Sometimes related to bowel movements",
+                    "value": "sometimes-related",
+                    "weight": 2,
+                    "icon": "🤷"
+                },
+                {
+                    "text": "Not related to bowel movements",
+                    "value": "not-related",
+                    "weight": 0,
+                    "icon": "❌"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Have you noticed changes in your bowel movement frequency?",
+            "type": "single-choice",
+            "category": "frequency-changes",
+            "options": [
+                {
+                    "text": "Yes, significant changes in frequency",
+                    "value": "significant-change",
+                    "weight": 3,
+                    "icon": "📊"
+                },
+                {
+                    "text": "Some changes in frequency",
+                    "value": "some-change",
+                    "weight": 2,
+                    "icon": "📈"
+                },
+                {
+                    "text": "No changes in frequency",
+                    "value": "no-change",
+                    "weight": 0,
+                    "icon": "➖"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Have you noticed changes in your stool appearance?",
+            "type": "single-choice",
+            "category": "stool-changes",
+            "options": [
+                {
+                    "text": "Yes, major changes in appearance/consistency",
+                    "value": "major-changes",
+                    "weight": 3,
+                    "icon": "🔍"
+                },
+                {
+                    "text": "Minor changes occasionally",
+                    "value": "minor-changes",
+                    "weight": 2,
+                    "icon": "👀"
+                },
+                {
+                    "text": "No changes in appearance",
+                    "value": "no-changes",
+                    "weight": 0,
+                    "icon": "✅"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "How would you describe your predominant bowel pattern?",
+            "type": "single-choice",
+            "category": "bowel-pattern",
+            "options": [
+                {
+                    "text": "Mostly constipation (hard, lumpy stools)",
+                    "value": "constipation-predominant",
+                    "weight": 2,
+                    "icon": "🚫"
+                },
+                {
+                    "text": "Mostly diarrhea (loose, watery stools)",
+                    "value": "diarrhea-predominant",
+                    "weight": 2,
+                    "icon": "💧"
+                },
+                {
+                    "text": "Alternating between constipation and diarrhea",
+                    "value": "mixed-pattern",
+                    "weight": 3,
+                    "icon": "🔄"
+                },
+                {
+                    "text": "Normal, regular bowel movements",
+                    "value": "normal-pattern",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Do you experience bloating or abdominal distension?",
+            "type": "single-choice",
+            "category": "bloating",
+            "options": [
+                {
+                    "text": "Severe, daily bloating",
+                    "value": "severe-bloating",
+                    "weight": 3,
+                    "icon": "🎈"
+                },
+                {
+                    "text": "Moderate, frequent bloating",
+                    "value": "moderate-bloating",
+                    "weight": 2,
+                    "icon": "😮‍💨"
+                },
+                {
+                    "text": "Mild, occasional bloating",
+                    "value": "mild-bloating",
+                    "weight": 1,
+                    "icon": "😑"
+                },
+                {
+                    "text": "No bloating",
+                    "value": "no-bloating",
+                    "weight": 0,
+                    "icon": "😌"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Do you notice mucus in your stools?",
+            "type": "single-choice",
+            "category": "mucus",
+            "options": [
+                {
+                    "text": "Yes, frequently",
+                    "value": "frequent-mucus",
+                    "weight": 2,
+                    "icon": "🔍"
+                },
+                {
+                    "text": "Occasionally",
+                    "value": "occasional-mucus",
+                    "weight": 1,
+                    "icon": "👀"
+                },
+                {
+                    "text": "No mucus",
+                    "value": "no-mucus",
+                    "weight": 0,
+                    "icon": "✅"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Do certain foods trigger or worsen your symptoms?",
+            "type": "single-choice",
+            "category": "food-triggers",
+            "options": [
+                {
+                    "text": "Yes, clear food triggers identified",
+                    "value": "clear-triggers",
+                    "weight": 3,
+                    "icon": "🥪"
+                },
+                {
+                    "text": "Some foods seem to trigger symptoms",
+                    "value": "some-triggers",
+                    "weight": 2,
+                    "icon": "🤔"
+                },
+                {
+                    "text": "No clear food triggers",
+                    "value": "no-triggers",
+                    "weight": 0,
+                    "icon": "🍽️"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Do stress or emotions affect your digestive symptoms?",
+            "type": "single-choice",
+            "category": "stress-relation",
+            "options": [
+                {
+                    "text": "Yes, stress significantly worsens symptoms",
+                    "value": "stress-worsens",
+                    "weight": 2,
+                    "icon": "😰"
+                },
+                {
+                    "text": "Stress has mild effect on symptoms",
+                    "value": "stress-mild-effect",
+                    "weight": 1,
+                    "icon": "😐"
+                },
+                {
+                    "text": "No relationship with stress",
+                    "value": "no-stress-effect",
+                    "weight": 0,
+                    "icon": "😌"
+                }
+            ]
+        }
+    ],
+    "scoring": {
+        "low": {
+            "min": 0,
+            "max": 10,
+            "level": "Unlikely IBS",
+            "color": "#4CAF50",
+            "description": "Your symptoms are less consistent with IBS criteria."
+        },
+        "moderate": {
+            "min": 11,
+            "max": 18,
+            "level": "Possible IBS",
+            "color": "#FF9800",
+            "description": "Your symptoms may suggest IBS - consider medical evaluation."
+        },
+        "high": {
+            "min": 19,
+            "max": 27,
+            "level": "Likely IBS",
+            "color": "#F44336",
+            "description": "Your symptoms are highly consistent with IBS criteria."
+        }
+    },
+    "recommendations": {
+        "low": [
+            "Your symptoms don't strongly suggest IBS",
+            "Consider other digestive conditions if symptoms persist",
+            "Maintain a food diary to identify potential triggers",
+            "Continue monitoring symptoms and their patterns",
+            "Focus on general digestive health with fiber and hydration",
+            "Contact healthcare provider if symptoms worsen or new symptoms develop"
+        ],
+        "moderate": [
+            "Your symptoms may suggest IBS - consider medical evaluation",
+            "Keep a detailed symptom and food diary",
+            "Try eliminating common trigger foods (dairy, gluten, high-FODMAP foods)",
+            "Practice stress management techniques",
+            "Consider probiotics and regular meal timing",
+            "Speak with a healthcare provider for proper evaluation and diagnosis",
+            "Explore dietary modifications under professional guidance"
+        ],
+        "high": [
+            "Your symptoms are consistent with IBS - seek medical evaluation",
+            "Consult with a gastroenterologist for proper diagnosis",
+            "Consider low-FODMAP diet under dietitian guidance",
+            "Implement stress reduction strategies (meditation, yoga, counseling)",
+            "Maintain regular meal times and adequate fiber intake",
+            "Discuss treatment options including medications if appropriate",
+            "Consider working with both gastroenterologist and registered dietitian"
+        ]
+    },
+    "romeIVCriteria": {
+        "description": "Rome IV criteria require recurrent abdominal pain at least 1 day per week in the last 3 months, associated with 2 or more of the following:",
+        "criteria": [
+            "Related to defecation",
+            "Associated with a change in frequency of stool",
+            "Associated with a change in form (appearance) of stool"
+        ],
+        "timeframe": "Criteria fulfilled for the last 3 months with symptom onset at least 6 months prior to diagnosis"
+    },
+    "metadata": {
+        "basedOn": "Rome IV Criteria for Functional Gastrointestinal Disorders",
+        "lastUpdated": "2025-07-31",
+        "targetConditions": ["Irritable Bowel Syndrome", "Functional digestive disorders"],
+        "disclaimer": "This tool screens for IBS likelihood but cannot provide a diagnosis. Medical evaluation is required for proper diagnosis and management."
+    }
+}

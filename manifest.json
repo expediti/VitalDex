@@ -1,12 +1,12 @@
 {
-    "name": "HealthCheckPro - Free Health Symptom Checkers",
+    "name": "HealthCheckPro - Symptom Checker Tools",
     "short_name": "HealthCheckPro",
-    "description": "Free online symptom checkers and health assessment tools",
+    "description": "Free online symptom checker tools and health information",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#2196F3",
-    "orientation": "portrait",
+    "orientation": "portrait-primary",
     "icons": [
         {
             "src": "/assets/images/icon-192.png",
@@ -19,6 +19,19 @@
             "type": "image/png"
         }
     ],
-    "categories": ["health", "medical", "utilities"],
-    "lang": "en-US"
+    "categories": ["health", "medical", "lifestyle"],
+    "screenshots": [
+        {
+            "src": "/assets/images/screenshot-mobile.png",
+            "sizes": "375x812",
+            "type": "image/png",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/assets/images/screenshot-desktop.png", 
+            "sizes": "1200x800",
+            "type": "image/png",
+            "form_factor": "wide"
+        }
+    ]
 }

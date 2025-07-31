@@ -1,0 +1,302 @@
+{
+    "tool": "gastroenteritis-symptom-checker",
+    "title": "Gastroenteritis Symptom Checker",
+    "description": "Assess gastroenteritis (stomach flu) symptoms and determine severity level",
+    "version": "1.0",
+    "maxScore": 27,
+    "autoAdvance": true,
+    "questions": [
+        {
+            "id": 1,
+            "question": "How long have you had these digestive symptoms?",
+            "type": "single-choice",
+            "category": "duration",
+            "options": [
+                {
+                    "text": "Less than 24 hours",
+                    "value": "less-24-hours",
+                    "weight": 1,
+                    "icon": "⏰"
+                },
+                {
+                    "text": "1-3 days",
+                    "value": "1-3-days",
+                    "weight": 2,
+                    "icon": "📅"
+                },
+                {
+                    "text": "4-7 days",
+                    "value": "4-7-days",
+                    "weight": 3,
+                    "icon": "📆"
+                },
+                {
+                    "text": "More than a week",
+                    "value": "over-week",
+                    "weight": 4,
+                    "icon": "🗓️"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Are you experiencing nausea or vomiting?",
+            "type": "single-choice",
+            "category": "nausea-vomiting",
+            "options": [
+                {
+                    "text": "Severe vomiting (can't keep fluids down)",
+                    "value": "severe-vomiting",
+                    "weight": 4,
+                    "icon": "🤮"
+                },
+                {
+                    "text": "Frequent vomiting episodes",
+                    "value": "frequent-vomiting",
+                    "weight": 3,
+                    "icon": "🤢"
+                },
+                {
+                    "text": "Nausea with occasional vomiting",
+                    "value": "mild-nausea",
+                    "weight": 2,
+                    "icon": "😵"
+                },
+                {
+                    "text": "No nausea or vomiting",
+                    "value": "no-nausea",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "How would you describe your diarrhea?",
+            "type": "single-choice",
+            "category": "diarrhea",
+            "options": [
+                {
+                    "text": "Severe watery diarrhea (10+ times/day)",
+                    "value": "severe-watery",
+                    "weight": 4,
+                    "icon": "💧"
+                },
+                {
+                    "text": "Frequent loose stools (6-9 times/day)",
+                    "value": "frequent-loose",
+                    "weight": 3,
+                    "icon": "💩"
+                },
+                {
+                    "text": "Moderate diarrhea (3-5 times/day)",
+                    "value": "moderate-diarrhea",
+                    "weight": 2,
+                    "icon": "🚽"
+                },
+                {
+                    "text": "No diarrhea",
+                    "value": "no-diarrhea",
+                    "weight": 0,
+                    "icon": "✅"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Do you have abdominal pain or cramping?",
+            "type": "single-choice",
+            "category": "abdominal-pain",
+            "options": [
+                {
+                    "text": "Severe abdominal cramping",
+                    "value": "severe-cramping",
+                    "weight": 3,
+                    "icon": "😰"
+                },
+                {
+                    "text": "Moderate cramping",
+                    "value": "moderate-cramping",
+                    "weight": 2,
+                    "icon": "😣"
+                },
+                {
+                    "text": "Mild abdominal discomfort",
+                    "value": "mild-discomfort",
+                    "weight": 1,
+                    "icon": "😐"
+                },
+                {
+                    "text": "No abdominal pain",
+                    "value": "no-pain",
+                    "weight": 0,
+                    "icon": "😌"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Do you have a fever?",
+            "type": "single-choice",
+            "category": "fever",
+            "options": [
+                {
+                    "text": "High fever (over 101.3°F/38.5°C)",
+                    "value": "high-fever",
+                    "weight": 3,
+                    "icon": "🌡️"
+                },
+                {
+                    "text": "Low-grade fever",
+                    "value": "low-fever",
+                    "weight": 2,
+                    "icon": "🤒"
+                },
+                {
+                    "text": "No fever",
+                    "value": "no-fever",
+                    "weight": 0,
+                    "icon": "❄️"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Are you experiencing signs of dehydration?",
+            "type": "single-choice",
+            "category": "dehydration",
+            "options": [
+                {
+                    "text": "Severe: dizziness, little/no urination, dry mouth",
+                    "value": "severe-dehydration",
+                    "weight": 5,
+                    "icon": "🚨"
+                },
+                {
+                    "text": "Mild: thirsty, slightly dizzy",
+                    "value": "mild-dehydration",
+                    "weight": 3,
+                    "icon": "😵‍💫"
+                },
+                {
+                    "text": "No signs of dehydration",
+                    "value": "no-dehydration",
+                    "weight": 0,
+                    "icon": "💧"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Do you have any additional symptoms?",
+            "type": "single-choice",
+            "category": "additional-symptoms",
+            "options": [
+                {
+                    "text": "Severe headache, body aches, chills",
+                    "value": "severe-additional",
+                    "weight": 3,
+                    "icon": "🤕"
+                },
+                {
+                    "text": "Mild headache, body aches, fatigue",
+                    "value": "mild-additional",
+                    "weight": 2,
+                    "icon": "😑"
+                },
+                {
+                    "text": "No other symptoms",
+                    "value": "no-additional",
+                    "weight": 0,
+                    "icon": "😊"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Have you noticed blood or mucus in your stool?",
+            "type": "single-choice",
+            "category": "warning-signs",
+            "options": [
+                {
+                    "text": "Yes, blood and/or mucus present",
+                    "value": "blood-mucus",
+                    "weight": 5,
+                    "icon": "🩸"
+                },
+                {
+                    "text": "No blood or mucus",
+                    "value": "no-blood",
+                    "weight": 0,
+                    "icon": "✅"
+                }
+            ]
+        }
+    ],
+    "scoring": {
+        "low": {
+            "min": 0,
+            "max": 8,
+            "level": "Mild Gastroenteritis",
+            "color": "#4CAF50",
+            "description": "Your symptoms suggest mild gastroenteritis that can likely be managed at home."
+        },
+        "moderate": {
+            "min": 9,
+            "max": 16,
+            "level": "Moderate Gastroenteritis",
+            "color": "#FF9800",
+            "description": "You have moderate gastroenteritis symptoms that require careful monitoring."
+        },
+        "high": {
+            "min": 17,
+            "max": 27,
+            "level": "Severe Gastroenteritis",
+            "color": "#F44336",
+            "description": "Your symptoms suggest severe gastroenteritis that may require medical attention."
+        }
+    },
+    "recommendations": {
+        "low": [
+            "Focus on staying hydrated with clear fluids",
+            "Rest and avoid solid foods until vomiting stops",
+            "Try small, frequent sips of water, broth, or oral rehydration solution",
+            "Gradually return to bland foods (BRAT diet: bananas, rice, applesauce, toast)",
+            "Avoid dairy, caffeine, alcohol, and fatty foods",
+            "Most symptoms should improve within 1-3 days",
+            "Contact healthcare provider if symptoms worsen or persist beyond 3 days"
+        ],
+        "moderate": [
+            "Prioritize fluid replacement to prevent dehydration",
+            "Consider oral rehydration solutions for electrolyte replacement",
+            "Rest and avoid work/social activities until symptoms improve", 
+            "Monitor for signs of worsening dehydration",
+            "Contact healthcare provider if unable to keep fluids down for 24+ hours",
+            "Seek medical attention if symptoms persist beyond 5 days",
+            "Watch for warning signs: blood in stool, high fever, severe dehydration"
+        ],
+        "high": [
+            "Seek medical attention promptly, especially for dehydration or blood in stool",
+            "Consider immediate medical care if severely dehydrated",
+            "May require IV fluids or medical monitoring",
+            "Continue attempting oral rehydration while seeking care",
+            "Call healthcare provider immediately for guidance",
+            "Watch for emergency signs: severe dehydration, persistent high fever",
+            "Don't delay seeking professional medical evaluation"
+        ]
+    },
+    "warningSymptoms": [
+        "Signs of severe dehydration (dizziness, little/no urination, dry mouth)",
+        "Blood or pus in diarrhea",
+        "High fever over 101.3°F (38.5°C)",
+        "Persistent vomiting preventing fluid intake",
+        "Severe abdominal pain",
+        "Symptoms lasting more than 10 days"
+    ],
+    "metadata": {
+        "basedOn": "Clinical gastroenterology guidelines and medical literature",
+        "lastUpdated": "2025-07-31",
+        "targetConditions": ["Viral gastroenteritis", "Bacterial gastroenteritis", "Stomach flu"],
+        "disclaimer": "Most gastroenteritis resolves on its own, but dehydration can be serious. Seek medical care for concerning symptoms."
+    }
+}

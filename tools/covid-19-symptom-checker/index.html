@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Symptom Checker - Free Online Assessment | HealthCheckPro</title>
+    <meta name="description" content="Free COVID-19 symptom checker. Assess fever, cough, breathing problems, and other symptoms. Get instant results and WHO-guideline based recommendations.">
+    <meta name="keywords" content="COVID-19, coronavirus, symptom checker, fever, cough, COVID test, coronavirus symptoms">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="COVID-19 Symptom Checker - Free Assessment Tool">
+    <meta property="og:description" content="Free COVID-19 symptom checker based on WHO guidelines. Assess your symptoms and get recommendations.">
+    <meta property="og:url" content="https://healthcheckpro.com/tools/covid-19-symptom-checker/">
+    <meta property="og:type" content="article">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "name": "COVID-19 Symptom Checker",
+        "description": "Free online tool to assess COVID-19 symptoms and determine risk level based on WHO guidelines",
+        "url": "https://healthcheckpro.com/tools/covid-19-symptom-checker/",
+        "mainContentOfPage": {
+            "@type": "HealthTopicContent",
+            "hasHealthAspect": ["SymptomAssessment", "InfectiousDisease"]
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://healthcheckpro.com"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Health Tools",
+                    "item": "https://healthcheckpro.com/tools/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "COVID-19 Symptom Checker",
+                    "item": "https://healthcheckpro.com/tools/covid-19-symptom-checker/"
+                }
+            ]
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "HealthCheckPro"
+        },
+        "dateModified": "2025-01-31",
+        "inLanguage": "en-US"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/tools.css">
+    <link rel="canonical" href="https://healthcheckpro.com/tools/covid-19-symptom-checker/">
+</head>
+<body>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="/tools/">Tools</a></li>
+                <li aria-current="page">COVID-19 Symptom Checker</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Tool Header -->
+    <header class="tool-header">
+        <div class="container">
+            <div class="tool-info">
+                <div class="tool-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="#FF6B6B"/>
+                        <circle cx="8" cy="8" r="1" fill="#fff"/>
+                        <circle cx="16" cy="8" r="1" fill="#fff"/>
+                        <circle cx="12" cy="16" r="1" fill="#fff"/>
+                        <circle cx="6" cy="14" r="1" fill="#fff"/>
+                        <circle cx="18" cy="14" r="1" fill="#fff"/>
+                    </svg>
+                </div>
+                <div class="tool-details">
+                    <h1>COVID-19 Symptom Checker</h1>
+                    <p>Assess your symptoms for COVID-19 with our quick, WHO-guideline based screening tool. Get instant results and evidence-based recommendations for your next steps.</p>
+                    <div class="tool-meta">
+                        <span>📋 2-3 minutes</span>
+                        <span>❓ 8 questions</span>
+                        <span>✅ WHO guidelines</span>
+                        <span>🔒 Private & secure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quiz Container -->
+    <main class="quiz-container">
+        <div class="container">
+            <!-- Progress Section -->
+            <div class="progress-section">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <span class="progress-text">Question 1 of 8</span>
+            </div>
+
+            <!-- Quiz Questions -->
+            <div class="quiz-content">
+                <!-- Question 1 -->
+                <div class="question active" data-question="1">
+                    <span class="question-number">Question 1 of 8</span>
+                    <h2>Do you currently have a fever above 100.4°F (38°C)?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="high-fever" data-weight="4">
+                            <span class="icon">🌡️</span>
+                            <span class="text">Yes, high fever (above 102°F/39°C)</span>
+                        </button>
+                        <button class="answer-btn" data-value="mild-fever" data-weight="3">
+                            <span class="icon">🌡️</span>
+                            <span class="text">Yes, mild fever (100.4-102°F/38-39°C)</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-fever" data-weight="0">
+                            <span class="icon">❄️</span>
+                            <span class="text">No fever</span>
+                        </button>
+                        <button class="answer-btn" data-value="unsure" data-weight="1">
+                            <span class="icon">🤔</span>
+                            <span class="text">I'm not sure / haven't checked</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question" data-question="2">
+                    <span class="question-number">Question 2 of 8</span>
+                    <h2>Are you experiencing a cough?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="severe-cough" data-weight="4">
+                            <span class="icon">😷</span>
+                            <span class="text">Yes, severe persistent cough</span>
+                        </button>
+                        <button class="answer-btn" data-value="dry-cough" data-weight="3">
+                            <span class="icon">😮</span>
+                            <span class="text">Yes, dry cough</span>
+                        </button>
+                        <button class="answer-btn" data-value="wet-cough" data-weight="2">
+                            <span class="icon">💧</span>
+                            <span class="text">Yes, cough with mucus</span>
+                        </button>
+                        <button class="answer-btn" data-value="mild-cough" data-weight="1">
+                            <span class="icon">😤</span>
+                            <span class="text">Mild occasional cough</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-cough" data-weight="0">
+                            <span class="icon">😊</span>
+                            <span class="text">No cough</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question" data-question="3">
+                    <span class="question-number">Question 3 of 8</span>
+                    <h2>Have you lost your sense of taste or smell?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="complete-loss" data-weight="5">
+                            <span class="icon">👃</span>
+                            <span class="text">Complete loss of taste and smell</span>
+                        </button>
+                        <button class="answer-btn" data-value="partial-loss" data-weight="3">
+                            <span class="icon">👃</span>
+                            <span class="text">Partial loss of taste or smell</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-change" data-weight="0">
+                            <span class="icon">😋</span>
+                            <span class="text">No change in taste or smell</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question" data-question="4">
+                    <span class="question-number">Question 4 of 8</span>
+                    <h2>Are you experiencing shortness of breath or difficulty breathing?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="severe-breathing" data-weight="6">
+                            <span class="icon">🫁</span>
+                            <span class="text">Severe difficulty breathing</span>
+                        </button>
+                        <button class="answer-btn" data-value="moderate-breathing" data-weight="4">
+                            <span class="icon">😰</span>
+                            <span class="text">Moderate shortness of breath</span>
+                        </button>
+                        <button class="answer-btn" data-value="mild-breathing" data-weight="2">
+                            <span class="icon">😤</span>
+                            <span class="text">Mild shortness of breath with activity</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-breathing" data-weight="0">
+                            <span class="icon">😊</span>
+                            <span class="text">No breathing difficulties</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question" data-question="5">
+                    <span class="question-number">Question 5 of 8</span>
+                    <h2>Do you have body aches, fatigue, or feel generally unwell?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="severe-fatigue" data-weight="3">
+                            <span class="icon">😴</span>
+                            <span class="text">Severe fatigue and body aches</span>
+                        </button>
+                        <button class="answer-btn" data-value="moderate-fatigue" data-weight="2">
+                            <span class="icon">😑</span>
+                            <span class="text">Moderate fatigue and some aches</span>
+                        </button>
+                        <button class="answer-btn" data-value="mild-fatigue" data-weight="1">
+                            <span class="icon">🙄</span>
+                            <span class="text">Mild fatigue</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-fatigue" data-weight="0">
+                            <span class="icon">😊</span>
+                            <span class="text">Feeling normal</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question" data-question="6">
+                    <span class="question-number">Question 6 of 8</span>
+                    <h2>Do you have a sore throat or runny nose?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="both-symptoms" data-weight="2">
+                            <span class="icon">🤧</span>
+                            <span class="text">Both sore throat and runny nose</span>
+                        </button>
+                        <button class="answer-btn" data-value="sore-throat" data-weight="1">
+                            <span class="icon">😣</span>
+                            <span class="text">Sore throat only</span>
+                        </button>
+                        <button class="answer-btn" data-value="runny-nose" data-weight="1">
+                            <span class="icon">🤧</span>
+                            <span class="text">Runny nose only</span>
+                        </button>
+                        <button class="answer-btn" data-value="neither" data-weight="0">
+                            <span class="icon">😊</span>
+                            <span class="text">Neither</span>
+                        </button>
+                    </div>
+                </div>
+
+                                <!-- Question 7 -->
+                <div class="question" data-question="7">
+                    <span class="question-number">Question 7 of 8</span>
+                    <h2>Have you been in close contact with someone confirmed to have COVID-19?</h2>
+                    <p class="question-description">Close contact means within 6 feet for 15+ minutes in the past 14 days</p>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="confirmed-contact" data-weight="4">
+                            <span class="icon">👥</span>
+                            <span class="text">Yes, confirmed close contact</span>
+                        </button>
+                        <button class="answer-btn" data-value="possible-contact" data-weight="2">
+                            <span class="icon">🤷</span>
+                            <span class="text">Possible contact / unsure</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-contact" data-weight="0">
+                            <span class="icon">🛡️</span>
+                            <span class="text">No known contact</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="question" data-question="8">
+                    <span class="question-number">Question 8 of 8</span>
+                    <h2>When did your symptoms first appear?</h2>
+                    <div class="answer-options">
+                        <button class="answer-btn" data-value="today" data-weight="3">
+                            <span class="icon">📅</span>
+                            <span class="text">Today</span>
+                        </button>
+                        <button class="answer-btn" data-value="1-3-days" data-weight="3">
+                            <span class="icon">📅</span>
+                            <span class="text">1-3 days ago</span>
+                        </button>
+                        <button class="answer-btn" data-value="4-7-days" data-weight="2">
+                            <span class="icon">📅</span>
+                            <span class="text">4-7 days ago</span>
+                        </button>
+                        <button class="answer-btn" data-value="over-week" data-weight="1">
+                            <span class="icon">📅</span>
+                            <span class="text">More than a week ago</span>
+                        </button>
+                        <button class="answer-btn" data-value="no-symptoms" data-weight="0">
+                            <span class="icon">😊</span>
+                            <span class="text">I don't have symptoms</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="quiz-navigation">
+                <button id="prevBtn" class="btn-secondary" disabled>← Previous</button>
+                <button id="nextBtn" class="btn-primary" disabled>Next →</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Results Section (Hidden initially) -->
+    <section class="results-section" id="resultsSection" style="display: none;">
+        <div class="container">
+            <div class="results-content">
+                <div class="result-header">
+                    <h2>Your COVID-19 Risk Assessment</h2>
+                    <p>Based on your responses, here's your personalized assessment:</p>
+                </div>
+                
+                <div class="result-score">
+                    <div class="score-circle">
+                        <div class="score-content">
+                            <span class="score-number">0</span>
+                            <span class="score-label">Risk Score</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="risk-level">Assessment Complete</div>
+                
+                <div class="result-interpretation">
+                    <h3>What This Means</h3>
+                    <p id="interpretation-text">Your results will appear here...</p>
+                    <ul id="recommendations-list">
+                        <!-- Recommendations will be inserted here -->
+                    </ul>
+                </div>
+
+                <!-- Emergency Warning (Hidden by default) -->
+                <div class="emergency-warning" style="display: none;">
+                    <h4>⚠️ Seek Immediate Medical Attention</h4>
+                    <p>Based on your symptoms, you should contact healthcare services immediately or call emergency services if you have severe breathing difficulties.</p>
+                </div>
+
+                <div class="result-actions">
+                    <button class="restart-quiz">Take Assessment Again</button>
+                    <a href="/blog/understanding-covid-symptoms/" class="btn-primary">Learn More About COVID-19</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Content -->
+    <section class="related-content">
+        <div class="container">
+            <h2>Related COVID-19 Information</h2>
+            <div class="related-grid">
+                <div class="related-card">
+                    <h3><a href="/blog/understanding-covid-symptoms/">Complete Guide to COVID-19 Symptoms</a></h3>
+                    <p>Learn about the full range of COVID-19 symptoms, from common to rare, and understand when they typically appear.</p>
+                </div>
+                <div class="related-card">
+                    <h3><a href="/blog/covid-testing-guide/">When and How to Get Tested for COVID-19</a></h3>
+                    <p>Comprehensive guide to COVID-19 testing options, when to get tested, and understanding your results.</p>
+                </div>
+                <div class="related-card">
+                    <h3><a href="/blog/covid-prevention/">COVID-19 Prevention and Safety Measures</a></h3>
+                    <p>Evidence-based strategies to protect yourself and others, including vaccination, masking, and hygiene practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Disclaimer -->
+    <section class="disclaimer-section">
+        <div class="container">
+            <div class="disclaimer-content">
+                <h3>⚠️ Important Medical Disclaimer</h3>
+                <p>This tool is for informational purposes only and cannot replace professional medical evaluation. If you have severe symptoms like difficulty breathing, persistent chest pain, confusion, or bluish lips/face, seek emergency medical care immediately. For non-emergency concerns, contact your healthcare provider.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/symptom-checker.js"></script>
+</body>
+</html>

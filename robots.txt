@@ -6,7 +6,7 @@ Allow: /tools/
 Allow: /blog/
 
 # Sitemap location
-Sitemap: https://www.fitscan.life/sitemap.xml
+Sitemap: https://www.fitscan.life/robot.txt
 
 
 # Block admin areas (if any)

@@ -6,7 +6,7 @@ Allow: /tools/
 Allow: /blog/
 
 # Sitemap location
-Sitemap: https://healthcheckpro.com/sitemap.xml
+Sitemap: https://www.fitscan.life/sitemap.xml
 
 
 # Block admin areas (if any)

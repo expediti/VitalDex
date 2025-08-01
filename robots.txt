@@ -6,13 +6,13 @@ Allow: /tools/
 Allow: /blog/
 
 # Sitemap location
-Sitemap: https://www.fitscan.life/robot.txt
+Sitemap: https://www.fitscan.life/sitemap.xml
 
 
 # Block admin areas (if any)
 Disallow: /admin/
 Disallow: /api/
-Disallow: /.git/
+Disallow: /git/
 
 # Allow all health tools and content
 Allow: /tools/
